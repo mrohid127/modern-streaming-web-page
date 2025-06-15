@@ -31,9 +31,6 @@ project-root/
 │ └── icons/
 │ └── logo.png
 
-yaml
-Salin
-Edit
 
 ---
 
