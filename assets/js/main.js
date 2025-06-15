@@ -79,10 +79,11 @@ $(document).ready(function () {
     ];
 
     // Populate the carousel with movie posters
+
     movieData.forEach((movie) => {
         $carousel.append(`
             <div>
-                <img src="assets/img/${movie.poster}" alt="${movie.title}" />
+                <img src="assets/img/${movie.poster}" alt="${movie.title}" data-slug="${movie.slug}" />
             </div>
         `);
     });
@@ -90,8 +91,10 @@ $(document).ready(function () {
     // Handle movie poster click
     $(".movie-carousel img").on("click", function () {
         // Get the index based on Slick carousel's data
-        const index = $(this).closest(".slick-slide").data("slick-index") % movieData.length;
-        const movie = movieData[index];
+        const slug = $(this).data("slug");
+        const movie = movieData.find((m) => m.slug === slug);
+        // const movie = movieData[index];
+        console.log(movie);
         currentTrailerUrl = movie.trailer;
 
         // Show transition overlay and reset trailer
