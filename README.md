@@ -1,102 +1,100 @@
-# 💻 MacOS-Style Login Page (HTML + jQuery)
+# 🎥 Modern Streaming Web Page (HTML + Bootstrap + jQuery)
 
-Sebuah halaman login interaktif bergaya MacOS, dibuat hanya dengan HTML, CSS, dan jQuery — tanpa backend. Proyek ini mensimulasikan autentikasi login sederhana dan fitur pendaftaran, dengan tampilan modern dan dukungan tema gelap.
-
----
-
-## 🧩 Fitur Utama
-
--   ✅ **Login dan Register Form** dengan validasi dasar
--   🌗 **Light/Dark Theme Toggle** dengan penyimpanan preferensi di `localStorage`
--   🔒 **Remember Me** menyimpan username dan password (simulasi lokal)
--   🧊 **MacOS Glassmorphism Style** dengan efek `backdrop-filter`
--   🪟 Modal notifikasi login/register sukses
--   📱 Desain responsif untuk mobile
+A modern and responsive movie streaming web interface built with **HTML**, **Bootstrap 5**, **jQuery**, and **Slick Carousel** — with a stylish design inspired by platforms like Netflix or Disney+. This page includes a hero section, trailer embed, genre navigation, and a dynamic carousel layout.
 
 ---
 
-## 👤 Akun Demo
+## ✨ Features
 
-| Tipe | Username / Email                 | Password |
-| ---- | -------------------------------- | -------- |
-| Demo | `admin` atau `admin@example.com` | `123456` |
+- ✅ **Responsive Navbar** with genre dropdown
+- 🎬 **Hero Section** featuring a featured movie (Gundala)
+- 📺 **Trailer Popup** embedded directly from YouTube
+- 🎠 **Popular Now Carousel** powered by Slick Carousel
+- 🔍 **Search Bar** with dynamic dropdown suggestion placeholder
+- 🌙 **Dark-themed Design** with modern visuals
+- 📱 **Fully Mobile Responsive**
 
 ---
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 
+project-root/
+├── index.html
 ├── assets/
 │ ├── css/
 │ │ └── style.css
+│ ├── js/
+│ │ └── main.js
 │ ├── img/
-│ │ ├── dark.jpg
-│ │ └── light.jpg
-│ └── js/
-│ └── main.js
-├── partials/
-│ └── navbar.html
-├── index.html
-├── .gitignore
-└── README.md
+│ │ ├── gundala.jpg
+│ │ └── logo.png
+│ └── icons/
+│ └── logo.png
+
+yaml
+Salin
+Edit
 
 ---
 
-## ⚙️ Cara Menjalankan
+## 🛠 Technologies Used
 
-1. **Download/clone** repositori ini
-2. Buka file `index.html` menggunakan browser modern (Chrome, Firefox, Opera, dll)
-3. Login menggunakan akun demo atau daftar akun dummy (tidak disimpan ke server)
-
----
-
-## 📌 Catatan Teknis
-
--   Aplikasi **sepenuhnya frontend**, tidak ada koneksi ke backend.
--   Data login hanya divalidasi dengan data demo (`demoUser`) di JavaScript.
--   Tema terang/gelap disimpan di `localStorage` dan akan bertahan meskipun browser ditutup.
+- **HTML5**
+- **CSS3**
+- **Bootstrap 5.3**
+- **jQuery 3.7**
+- **Slick Carousel**
+- **Font Awesome 6**
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 🚀 How to Use
 
--   HTML5 + CSS3
--   jQuery (latest)
--   Bootstrap 5 (jika diaktifkan)
--   `localStorage` untuk penyimpanan ringan
-
----
-
-## 📸 Preview Tampilan
-
-| Light Mode | Dark Mode |
-|------------|-----------|
-| ![light](assets/screenshots/light-mode.png) | ![dark](assets/screenshots/dark-mode.png) |
-| ![light](assets/screenshots/light-mode-sing-up.png) | ![dark](assets/screenshots/dark-mode-sing-up.png) |
-
-> Jika belum punya screenshot, Anda bisa tambahkan manual di folder `assets/screenshots/`.
+1. Clone or download this repository
+2. Open `index.html` in any modern browser
+3. Explore the interactive UI:
+   - Click "Watch Trailer" to load the embedded video
+   - Use the navbar and genre dropdown for navigation
+   - View carousel content in "Popular Now"
 
 ---
 
-## 🧑‍💻 Developer
+## 📌 Notes
 
-Dibuat oleh **Muhammad Rohid**
-
-📷 Instagram: [@rohid.127](https://instagram.com/rohid.127)
-
----
-
-## 📄 Lisensi
-
-Proyek ini menggunakan lisensi [MIT](https://opensource.org/licenses/MIT). Bebas digunakan, dimodifikasi, dan disebarluaskan — mohon tetap cantumkan atribusi.
+- No backend functionality — this is a **frontend-only** simulation
+- The trailer uses an iframe and loads dynamically when clicking the trailer button
+- The search bar has a dropdown placeholder (`#search-suggestions`) for future implementation
+- Designed with responsive grid and dark UI theme for immersive experience
 
 ---
 
-## ✅ Rencana Pengembangan (Opsional)
+## 📸 Screenshots (Optional)
 
--   [ ] Simpan akun ke JSON dan validasi secara dinamis (untuk pembelajaran lanjut)
--   [ ] Export ke PWA (Progressive Web App)
--   [ ] Tambah animasi login/logout dengan CSS keyframe
+| Hero Section | Trailer Player | Carousel |
+|--------------|----------------|----------|
+| ![Hero](assets/screenshots/hero.png) | ![Trailer](assets/screenshots/trailer.png) | ![Carousel](assets/screenshots/carousel.png) |
+
+> You can add your own screenshots to the `assets/screenshots/` folder to complete this section.
 
 ---
 
-> Butuh bantuan upload ke GitHub? Saya siap bantu buatkan `git init`, `.gitignore`, dan langkah push-nya.
+## 👨‍💻 Author
+
+Made with ❤️ by **Muhammad Rohid**  
+📸 Instagram: [@rohid.127](https://instagram.com/rohid.127)
+
+---
+
+## 📄 License
+
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).  
+Feel free to use, modify, and share — just credit the author.
+
+---
+
+## 🧠 Future Enhancements (Optional Ideas)
+
+- [ ] Implement real-time search suggestions via JavaScript or API
+- [ ] Load carousel content dynamically using JSON
+- [ ] Add multiple categories (e.g., Trending, Top Rated)
+- [ ] Implement theme switching (light/dark toggle)
