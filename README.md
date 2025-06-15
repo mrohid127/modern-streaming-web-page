@@ -3,7 +3,7 @@
 A modern and responsive movie streaming web interface built with **HTML**, **Bootstrap 5**, **jQuery**, and **Slick Carousel** — with a stylish design inspired by platforms like Netflix or Disney+. This page includes a hero section, trailer embed, genre navigation, and a dynamic carousel layout.
 
 <p align="center">
-  <a href="https://mrohid127.github.io/mac-login-ui/" target="_blank">
+  <a href="https://mrohid127.github.io/modern-streaming-web-page/" target="_blank">
     <img src="https://img.shields.io/badge/🚀%20Live%20Preview-Click%20Here-blueviolet?style=for-the-badge&logo=google-chrome" alt="Live Preview" />
   </a>
 </p>
